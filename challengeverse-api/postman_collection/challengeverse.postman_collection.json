@@ -25,12 +25,12 @@
 							"raw": "{\n \"name\":\"Santiago Semhan\",\n \"review\": \"...\",\n \"rating\": 5\n}"
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/restaurants",
+							"raw": "http://localhost:{{port}}/api/restaurants",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"restaurants"
@@ -55,12 +55,12 @@
 							"raw": "{\n \"name\":\"Santiago Semhan\",\n \"review\": \"...\",\n \"rating\": 5\n}"
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/restaurants/:id",
+							"raw": "http://localhost:{{port}}/api/restaurants/:id",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"restaurants",
@@ -92,12 +92,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/restaurants:id",
+							"raw": "http://localhost:{{port}}/api/restaurants:id",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"restaurants:id"
@@ -122,12 +122,12 @@
 							"raw": "{\n    \"logo\": \"../logos/pretty_logo.png\",\n    \"commercialName\": \"Crazy Pizza\",\n    \"legalName\":\"Crazy Pizza Inc.\",\n    \"commercialEmail\": \"sales@crazypizza.com\",\n    \"adminNumber\": 123456,\n    \"address\": \"San Francisco, California 94128.\",\n    \"location\": {\n      \"lat\": 37.7696551,\n      \"lng\": -122.4713988\n    }\n  }"
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/restaurants",
+							"raw": "http://localhost:{{port}}/api/restaurants",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"restaurants"
@@ -152,12 +152,12 @@
 							"raw": "{\n    \"logo\": \"../logos/pretty_logo.png\",\n    \"commercialName\": \"Crazy Pizza\",\n    \"legalName\":\"Crazy Pizza Inc.\",\n    \"commercialEmail\": \"sales@crazypizza.com\",\n    \"adminNumber\": 123456,\n    \"address\": \"San Francisco, California 94128.\",\n    \"location\": {\n      \"lat\": 37.7696551,\n      \"lng\": -122.4713988\n    }\n  }"
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/restaurants/:id",
+							"raw": "http://localhost:{{port}}/api/restaurants/:id",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"restaurants",
@@ -189,12 +189,12 @@
 							"raw": "{\n \"name\":\"Santiago Semhan\",\n \"review\": \"...\",\n \"rating\": 5\n}"
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/restaurants/:id/reviews",
+							"raw": "http://localhost:{{port}}/api/restaurants/:id/reviews",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"restaurants",
@@ -227,12 +227,12 @@
 							"raw": "{\n    \"name\":\"Test Meal\",\n    \"description\": \"Test Meal Description\",\n    \"price\": 45\n}"
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/restaurants/:id/meals",
+							"raw": "http://localhost:{{port}}/api/restaurants/:id/meals",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"restaurants",
@@ -265,12 +265,12 @@
 							"raw": "{\n\t\"totalCost\": 58,\n\t\"address\": \"test address\",\n\t\"latLng\":{\n\t\t\"lat\":37.769808,\n\t\t\"lng\":-122.4705595\n\t},\n\t\"meals\": [1]\n}"
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/restaurants/:id/order",
+							"raw": "http://localhost:{{port}}/api/restaurants/:id/order",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"restaurants",
