@@ -12,7 +12,7 @@ It's a restfull API aimed to restaurants and delivery context.
 
     * API module, is responsible for attend client request and serve a very fast response ;)
 
-    * DB module or challenverse-db, responsible to manage db connections, handle db errors, etc. This module provide like *Doctrine Entity managers*, but instead, it provides Concrete classes that give a complete abstracction of db, and could be called from another module as if they where microservices. 
+    * DB module or challenverse-db, responsible to manage db connections, handle db errors, etc. This module provides Concrete classes that give a complete abstracction of db, and could be called from another module as if they where microservices. 
 
 2. Start api module by running `npm run start-dev` on api submodule. 
 
