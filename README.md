@@ -4,21 +4,21 @@
 ## About
 Challenge verse is a very simple demo coding platform for NodeJs Skills evaluation. 
 
-It's a restfull API aimed to restaurants and delivery context. 
+It's a restful API aimed to restaurants and delivery context. 
 
 
 ## Installation and running
-1. First at all, you have to run `npm install` on each submodule folders. In this project, you will have two main modules:
+1. First of all, you have to run `npm install` on each submodule folder. In this project, you will have two main modules:
 
-    * API module, is responsible for attend client request and serve a very fast response ;)
+    * API module, which is responsible for attend client requests and serve a very fast response ;)
 
-    * DB module or challenverse-db, responsible to manage db connections, handle db errors, etc. This module provide like *Doctrine Entity managers*, but instead, it provides Concrete classes that give a complete abstracction of db, and could be called from another module as if they where microservices. 
+    * DB module or challenverse-db, responsible for managing db connections, handling db errors, etc. This module provide like *Doctrine Entity managers*, but instead, it provides Concrete classes that give a complete abstracction of db, and could be called from another module as if they where microservices. 
 
 2. Start api module by running `npm run start-dev` on api submodule. 
 
 3. Execute setup script in DB module to generate database schema. So, you have to run `npm run setup` and then,
 
-4. you can load example data by running `node examples` into challengverse-db module.
+4. you can load example data by running `node examples` inside challengverse-db module.
 
 ## Env Configuration
 All modules are configurable by setting some NODE_ENV's variables: 
