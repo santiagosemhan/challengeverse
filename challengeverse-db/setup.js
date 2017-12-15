@@ -29,7 +29,7 @@ async function setup () {
     username: process.env.DB_USER || 'root',
     password: process.env.DB_PASS || '123',
     host: process.env.DB_HOST || 'localhost',
-    port: process.env.PORT || '33306',
+    port: process.env.DB_PORT || '3306',
     dialect: 'mysql',
     logging: s => debug(s),
     setup: true
