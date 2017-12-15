@@ -1,0 +1,33 @@
+{
+  "name": "challengeverse-db",
+  "version": "1.0.0",
+  "description": "A Simple Demo Platform - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "DEBUG=challengeverse:* node setup.js",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagosemhan/challengeverse.git"
+  },
+  "author": "Santiago Semhan <santiagosemhan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/santiagosemhan/challengeverse/issues"
+  },
+  "homepage": "https://github.com/santiagosemhan/challengeverse#readme",
+  "devDependencies": {
+    "sqlite3": "^3.1.9",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "debug": "^2.6.8",
+    "defaults": "^1.0.3",
+    "inquirer": "^3.2.1",
+    "minimist": "^1.2.0",
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.4.2"
+  }
+}

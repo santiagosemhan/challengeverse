@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+challengeverse-api/node_modules
+challengeverse-db/node_modules
