@@ -1,0 +1,294 @@
+{
+	"info": {
+		"name": "Challengeverse",
+		"_postman_id": "a19ec002-5d0f-fa38-94d2-bda78d034a27",
+		"description": "Challengeverse demo postman collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "restaurants",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/restaurants",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"name\":\"Santiago Semhan\",\n \"review\": \"...\",\n \"rating\": 5\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"restaurants"
+							]
+						},
+						"description": "Get all restaurants"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/restaurants/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"name\":\"Santiago Semhan\",\n \"review\": \"...\",\n \"rating\": 5\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"restaurants",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Get restaurant by id"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/restaurants/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"restaurants:id"
+							]
+						},
+						"description": "Delete restaurant by id"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/restaurants",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"logo\": \"../logos/pretty_logo.png\",\n    \"commercialName\": \"Crazy Pizza\",\n    \"legalName\":\"Crazy Pizza Inc.\",\n    \"commercialEmail\": \"sales@crazypizza.com\",\n    \"adminNumber\": 123456,\n    \"address\": \"San Francisco, California 94128.\",\n    \"location\": {\n      \"lat\": 37.7696551,\n      \"lng\": -122.4713988\n    }\n  }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"restaurants"
+							]
+						},
+						"description": "Create a new Restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/restaurants",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"logo\": \"../logos/pretty_logo.png\",\n    \"commercialName\": \"Crazy Pizza\",\n    \"legalName\":\"Crazy Pizza Inc.\",\n    \"commercialEmail\": \"sales@crazypizza.com\",\n    \"adminNumber\": 123456,\n    \"address\": \"San Francisco, California 94128.\",\n    \"location\": {\n      \"lat\": 37.7696551,\n      \"lng\": -122.4713988\n    }\n  }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"restaurants",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Update a Restaurant by Id"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/restaurants/:id/reviews",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"name\":\"Santiago Semhan\",\n \"review\": \"...\",\n \"rating\": 5\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants/:id/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"restaurants",
+								":id",
+								"reviews"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Add Review for a restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/restaurants/:id/meals",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Test Meal\",\n    \"description\": \"Test Meal Description\",\n    \"price\": 45\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants/:id/meals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"restaurants",
+								":id",
+								"meals"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Add Meal for a restaurant"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/restaurants/:id/order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"totalCost\": 58,\n\t\"address\": \"test address\",\n\t\"latLng\":{\n\t\t\"lat\":37.769808,\n\t\t\"lng\":-122.4705595\n\t},\n\t\"meals\": [1]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/restaurants/:id/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"restaurants",
+								":id",
+								"order"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Add new order and calculates ETA. "
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
