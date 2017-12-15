@@ -28,7 +28,7 @@ All modules are configurable by setting some NODE_ENV's variables:
     username: process.env.DB_USER || 'root',
     password: process.env.DB_PASS || '123',
     host: process.env.DB_HOST || 'localhost',
-    port: process.env.PORT 
+    port: process.env.DB_PORT || '3306'
 ```
 Database dialects is *Mysql* harcoded. 
 
