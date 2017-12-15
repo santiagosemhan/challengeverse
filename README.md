@@ -73,5 +73,6 @@ In browser or another http client, you can request challengeverse API. Default l
 :construction: Better doc under construction ...
 
 Author: Santiago Semhan <santiagosemhan@gmail.com> 🇦🇷
+
 License: MIT :heart:
 
