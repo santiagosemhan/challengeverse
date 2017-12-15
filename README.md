@@ -43,9 +43,10 @@ In browser or another http client, you can request challengeverse API. Default l
 
 1. *GET*    /restaurants/
 2. *GET*    /restaurants/:id
-3. *DELETE* /restaurants/:id
-4. *PUT*    /restaurants/:id
-5. *POST*   /restaurants/:id/reviews
+3. *POST*   /restaurants/:id
+4. *DELETE* /restaurants/:id
+5. *PUT*    /restaurants/:id
+6. *POST*   /restaurants/:id/reviews
 
 ```js
         //Example body request
@@ -55,8 +56,8 @@ In browser or another http client, you can request challengeverse API. Default l
             "rating": 5
         }
 ```
-6. *POST*   /restaurants/:id/meal
-7. *POST*   /restaurants/:id/order
+7. *POST*   /restaurants/:id/meal
+8. *POST*   /restaurants/:id/order
 
 ```js
         //Example body request
