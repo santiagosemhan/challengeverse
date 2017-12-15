@@ -84,6 +84,31 @@ api.get('/restaurants/:id', async (req, res, next) => {
     return next(e)
   }
 
+  if(!result){
+    return res.status(404).send({error: `Restaurant with id: ${id} not found`})
+  }
+
+  res.send(result)
+
+})
+
+/**
+ * Create a new Restaurant
+ */
+api.post('/restaurants', async (req, res, next) => {
+
+  let restaurant = req.body
+
+  debug(`A put request has come to /restaurants`)
+
+  let result
+
+  try {
+    result = await Restaurant.createOrUpdate(restaurant)
+  } catch (e) {
+    return next(e)
+  }
+
   res.send(result)
 })
 
@@ -95,10 +120,16 @@ api.delete('/restaurants/:id', async (req, res, next) => {
 
   debug(`A delete request has come to /restaurants/${id}`)
 
+  let result
+
   try {
-    let result = await Restaurant.remove(id)
+    result = await Restaurant.remove(id)
   } catch (e) {
     return next(e)
+  }
+
+  if(!result){
+    return res.status(404).send({error: `Restaurant with id: ${id} not found`})
   }
 
   // Successfull empty response =)
@@ -115,8 +146,14 @@ api.put('/restaurants/:id', async (req, res, next) => {
 
   debug(`A put request has come to /restaurants/${id}`)
 
+  if(!Restaurant.findById(id)){
+    return res.status(404).send({error: `Restaurant with id: ${id} not found`})
+  }
+
+  let result
+
   try {
-    restaurant = await Restaurant.createOrUpdate(restaurant)
+    result = await Restaurant.createOrUpdate(restaurant)
   } catch (e) {
     return next(e)
   }
@@ -151,7 +188,7 @@ api.post('/restaurants/:id/reviews', async (req, res, next) => {
  * Creates a Meal and relates to a restaurant
  * 
  */
-api.post('/restaurants/:id/meal', async (req, res, next) => {
+api.post('/restaurants/:id/meals', async (req, res, next) => {
   let id = req.params.id
 
   const meal = req.body
