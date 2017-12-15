@@ -4,7 +4,7 @@
   "description": "A Simple Demo Platform - DB Module",
   "main": "index.js",
   "scripts": {
-    "setup": "DEBUG=challengeverse:* node setup.js",
+    "setup": "DB_PORT=33306 DEBUG=challengeverse:* node setup.js",
     "lint": "standard"
   },
   "repository": {
